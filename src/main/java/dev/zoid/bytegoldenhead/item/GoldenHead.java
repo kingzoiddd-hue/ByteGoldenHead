@@ -57,6 +57,7 @@ public final class GoldenHead {
         head.setData(DataComponentTypes.CONSUMABLE, Consumable.consumable()
                 .animation(ItemUseAnimation.EAT)
                 .sound(Key.key("entity.generic.eat"))
+                .consumeSeconds(1.0f)
                 .hasConsumeParticles(true)
                 .addEffect(ConsumeEffect.applyStatusEffects(
                         List.of(
@@ -84,4 +85,5 @@ public final class GoldenHead {
         }
         return cachedItem.clone();
     }
+
 }
